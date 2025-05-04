@@ -21,7 +21,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif') repeat;
+    background: url(assets/Gif Sparkle.gif) repeat;
     opacity: 0.2;
     z-index: 0;
 }

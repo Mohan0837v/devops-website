@@ -8,5 +8,5 @@ docker stop devops-website 2>/dev/null || true
 docker rm devops-website 2>/dev/null || true
 
 echo "Starting new container..."
-docker run -d -p 9090:80 --name devops-website docker.io/mohan0837v/devops-website:latest
+docker run -d -p 8080:80 --name devops-website docker.io/mohan0837v/devops-website:latest
 
