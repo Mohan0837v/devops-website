@@ -1,5 +1,5 @@
 // script.js
 function sayHi() {
-    alert("Welcome to DevOps!");
-  }
-  
+    alert("🛸 Welcome aboard the DevOps spaceship!");
+}
+
