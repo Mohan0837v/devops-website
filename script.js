@@ -1,5 +1,5 @@
 // script.js
 function sayHi() {
-    alert("🛸 Welcome aboard the DevOps spaceship!");
+    window.location.href = "tools.html";
 }
 
