@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <script>
+    // Redirect if not logged in
+    if (!localStorage.getItem("loggedIn")) {
+      window.location.href = "login.html";
+    }
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevOps Galaxy</title>
@@ -10,6 +18,9 @@
 <body>
   <div class="stars"></div>
   <div class="content">
+    <!-- 🔘 Logout Button -->
+    <button onclick="logout()" style="position: absolute; top: 20px; right: 20px;">Logout</button>
+
     <h1>🚀 Welcome to the DevOps Galaxy 🌌</h1>
     <button onclick="sayHi()">Engage Warp Drive</button>
 
@@ -20,6 +31,14 @@
   </div>
 
   <script src="script.js"></script>
+
+  <!-- 🔧 Logout Script -->
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+  </script>
 </body>
 </html>
 
